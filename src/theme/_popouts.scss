@@ -1,0 +1,215 @@
+@use './mixins' as *;
+
+#app-mount {
+	// Scrollbars
+	.scroller-2MALzE {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	// General menus
+	.menu-1QACrS {
+		@include hsl(12%);
+		box-shadow: none;
+
+		.scroller-1bVxF5 {
+			padding: 0;
+			& > div[aria-hidden="true"],
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		.separator-1So4YB {
+			margin: 0;
+			background: rgb(255 255 255 / .01);
+		}
+		.item-1OdjEX {
+			margin: 0;
+			padding: 8px;
+			&.colorDefault-CDqZdO.focused-3qFvc8 {
+				@include hsl(9%);
+			}
+			&.colorDanger-3n-KnP.focused-3qFvc8 {
+				background: var(--discord-red);
+			}
+			&.colorPremium-vwmYZQ {
+				color: var(--discord-pink);
+				&.focused-3qFvc8 {
+					background: var(--discord-pink);
+					color: #fff;
+				}
+			}
+			& + .layer-2aCOJ3 {
+				margin-left: -4px;
+			}
+		}
+	}
+
+	// User popout
+	.userProfileInnerNonPremium-1XjSjn {
+		@include hsl(8%, 'background');
+		.overlayBackground-1KgwVi {
+			@include hsl(3%);
+		}
+	}
+
+	// Search suggestions
+	.container-2McqkF {
+		@include hsl(7%);
+		box-shadow: none;
+	}
+	.option-2KkUJO {
+		&:after {
+			content: none;
+		}
+		&.selected-rZcOL- {
+			@include hsl(4%);
+			&::before {
+				width: 34px;
+				@include hsl(4%);
+			}
+		}
+	}
+
+	// Search results
+	.searchResultsWrap-5RVOkx {
+		@include hsl(2%);
+	}
+	.searchHeader-1r_ZSh {
+		@include hsl(6%);
+	}
+	.channelName-3w2Y3c {
+		background: transparent;
+	}
+	.searchResult-O9NDji {
+		@include hsl(-1%);
+	}
+
+	// Status selector
+	.statusItem-2hiCNB {
+		padding: 0 4px;
+		.description-3Cwkxk {
+			display: none;
+		}
+	}
+
+	// Auto complete
+	.autocomplete-3NRXG8 {
+		@include hsl(3%);
+		box-shadow: none;
+		bottom: 100%;
+	}
+	.wrapper-22rqw6 {
+		@include hsl(4%);
+	}
+	.selected-3B2w1z,
+	.selected-3B2w1z:hover {
+		@include hsl(12%);
+	}
+	.categoryHeader-OpJ1Ly {
+		@include hsl(3%);
+	}
+	.base-2v-uc0.selected-3H3-RC {
+		@include hsl(6%);
+	}
+
+	// Pinned messages
+	.messagesPopoutWrap-3zryHW {
+		@include hsl(7%);
+		box-shadow: none;
+		code,
+		.embedFull-1HGV2S {
+			@include hsl(12%);
+		}
+	}
+	.header-1w9Q93 {
+		@include hsl(10%);
+		box-shadow: none;
+		.button-1_oXub {
+			@include hsl(20%);
+			color: #fff;
+		}
+	}
+	.messageGroupWrapper-1jf_7C {
+		@include hsl(5%);
+		border: none;
+	}
+	.jumpButton-1ZwI_j {
+		@include hsl(20%);
+		color: #fff;
+		&:hover {
+			@include hsl(30%);
+		}
+	}
+
+	// Inbox/Mentions
+	.container-2ebMPP {
+		@include hsl(7%);
+		box-shadow: none;
+	}
+	.icon-2yhmi8 {
+		background-color: transparent;
+	}
+	.channelHeader-DFRX8q {
+		@include hsl(7%);
+	}
+	.messageContainer-3VTXBC {
+		@include hsl(5%);
+	}
+	.closeButton-3CiW2j {
+		@include hsl(12%);
+	}
+
+	// Emojipicker/Gif selector
+	.contentWrapper-3vHNP2 {
+		@include hsl(12%);
+	}
+	.container-1SX9VC,
+	.container-2oNtJn {
+		@include hsl(3%);
+	}
+	.header-11eigE,
+	.header-JHwfVI,
+	.header-uVCAlo {
+		box-shadow: none;
+	}
+	.navButton-1XuvI-:hover {
+		@include hsl(20%);
+	}
+	.navButtonActive-1EqC5l {
+		background: rgb(var(--accent));
+		&:hover {
+			background: rgb(var(--accent));
+		}
+	}
+	.bodyWrapper-1eSOtW,
+	.content-1CboaJ,
+	.wrapper-i1awk3 {
+		@include hsl(7%);
+	}
+	.wrapper-1NNaWG {
+		@include hsl(7%);
+	}
+	.inspector-DFKXwB {
+		@include hsl(9%);
+	}
+	.categoryFadeBlurple-1HuV1x {
+		background: rgb(var(--accent));
+		opacity: .8;
+	}
+	.result-3OpoO7:hover:after {
+		box-shadow: inset 0 0 0 2px rgb(var(--accent));
+	}
+	.emojiItemSelected-2Lg50V {
+		@include hsl(20%);
+	}
+	.categoryItemDefaultCategorySelected-2YeRUu,
+	.guildIconWithoutImage-3bOll3,
+	.guildIcon-2SUGiq {
+		@include hsl(15%);
+		&:hover {
+			@include hsl(25%);
+		}
+	}
+}

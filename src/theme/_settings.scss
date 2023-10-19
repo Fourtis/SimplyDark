@@ -1,0 +1,86 @@
+@use './mixins' as *;
+
+#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+	transform: scale(1) !important;
+
+	// Sidebar
+	.sidebarRegionScroller-FXiQOh {
+		@include hsl(2%);
+	}
+	.sidebar-nqHbhN {
+		padding-right: 0;
+	}
+	.item-3XjbnG {
+		margin: 0;
+		&:hover {
+			@include hsl(4%);
+		}
+		&.selected-g-kMVV {
+			@include hsl(10%);
+			&.premiumTabItem-1QTfBr {
+				background: rgb(var(--accent)) !important;
+			}
+		}
+	}
+
+	// Main content
+	.contentRegionScroller-2_GT_N {
+		@include hsl(0%);
+	}
+
+	// Card
+	.formNotice-2nS8ey {
+		@include hsl(4%);
+		border: none;
+	}
+
+	// My Account
+	.accountProfileCard-lbN7n- {
+		@include hsl(4%);
+		.avatar-3mTjvZ {
+			@include hsl(4%);
+			@include hsl(4%, 'border-color');
+		}
+		.background-3d_SjE {
+			@include hsl(6%);
+		}
+		.fieldList-in8WkP {
+			background: transparent;
+		}
+	}
+
+	// Authored apps
+	.authedApp-1tw-eT {
+		@include hsl(4%);
+		border: none;
+	}
+
+	// Connections
+	.accountList-305sx3,
+	.connection-1fbD7X {
+		@include hsl(4%);
+	}
+	.accountBtnInner-3XK70s,
+	.integration-3kMeY4,
+	.connectionHeader-2rV1ze {
+		@include hsl(6%);
+	}
+
+	// Billing
+	.paymentPane-ut5qKZ {
+		@include hsl(4%);
+		.scrollerBase-_bVAAt {
+			border: none;
+		}
+	}
+	.paginator-1eqD2g {
+		background: transparent;
+	}
+	.payment-2bOh4k {
+		background: transparent;
+		@include hsl(8%, 'border-color');
+	}
+	.expandedInfo-1W31i3 {
+		@include hsl(2%);
+	}
+}

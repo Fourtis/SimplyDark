@@ -1,0 +1,45 @@
+@use './mixins' as *;
+
+#app-mount {
+	// General modal
+	.root-g14mjS {
+		@include hsl(0%);
+		box-shadow: none;
+	}
+	.footer-31IekZ,
+	.footer-VCsJQY {
+		box-shadow: none;
+		@include hsl(4%);
+	}
+
+	// File upload
+	.uploadModal-2ie9O_ {
+		@include hsl(0%);
+		.scrollableContainer-15eg7h {
+			@include hsl(3%);
+		}
+	}
+
+	// User modal
+	
+
+	// Quickswitch
+	.quickswitcher-pKcM9U {
+		@include hsl(4%);
+		box-shadow: none;
+	}
+	.input-3r5zZY {
+		@include hsl(8%);
+		box-shadow: none;
+	}
+	.scroller-2qwVWY {
+		background: transparent;
+		margin: 0;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	.resultFocused-3aIoYe {
+		@include hsl(8%);
+	}
+}
